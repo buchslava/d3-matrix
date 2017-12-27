@@ -1,0 +1,37 @@
+{
+  "xNodes":[
+    {"name":"Gates","group":1},
+    {"name":"Napoleon","group":2},
+    {"name":"Jobs","group":3},
+    {"name":"Armstrong","group":4},
+    {"name":"Kernigan","group":5}
+  ],
+  "yNodes":[
+    {"name":"Model","group":5},
+    {"name":"View","group":4},
+    {"name":"Controller","group":3},
+    {"name":"Utils","group":2}
+  ],
+  "links":[
+    {"source":0,"target":0,"value":2},
+    {"source":1,"target":0,"value":1},
+    {"source":2,"target":0,"value":1},
+    {"source":3,"target":0,"value":1},
+    {"source":4,"target":0,"value":1},
+    {"source":0,"target":1,"value":1},
+    {"source":1,"target":1,"value":1},
+    {"source":2,"target":1,"value":1},
+    {"source":3,"target":1,"value":1},
+    {"source":4,"target":1,"value":1},
+    {"source":0,"target":2,"value":1},
+    {"source":1,"target":2,"value":1},
+    {"source":2,"target":2,"value":1},
+    {"source":3,"target":2,"value":1},
+    {"source":4,"target":2,"value":1},
+    {"source":0,"target":3,"value":1},
+    {"source":1,"target":3,"value":1},
+    {"source":2,"target":3,"value":1},
+    {"source":3,"target":3,"value":1},
+    {"source":4,"target":3,"value":1}
+  ]
+}
