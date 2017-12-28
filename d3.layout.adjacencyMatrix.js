@@ -10,7 +10,7 @@
       var width = size[0],
       height = size[1],
       nodeWidth = width / xNodes.length,
-      nodeHeight = height / xNodes.length,
+      nodeHeight = height / yNodes.length,
       matrix = [],
       edgeHash = {},
       xScale = d3.scale.linear().domain([0,xNodes.length]).range([0,width]),
@@ -95,7 +95,7 @@
       .domain(xNodes.map(nodeID))
       .rangePoints([0,size[0]],1);
 
-      var xAxis = d3.svg.axis().scale(nameScale).orient("top").tickSize(4);
+      var xAxis = d3.svg.axis().scale(nameScale).orient("top");
 
       calledG
       .append("g")
@@ -113,8 +113,7 @@
       .rangePoints([0,size[1]],1);
 
       yAxis = d3.svg.axis().scale(nameScale)
-      .orient("right")
-      .tickSize(0);
+      .orient("right");
 
       calledG.append("g")
       .attr("class", "am-yAxis am-axis")

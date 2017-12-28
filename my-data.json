@@ -4,7 +4,13 @@
     {"name":"Napoleon"},
     {"name":"Jobs"},
     {"name":"Armstrong"},
-    {"name":"Kernigan"}
+    {"name":"Kernigan"},
+    {"name":"K1"},
+    {"name":"K2"},
+    {"name":"K3"},
+    {"name":"K4"},
+    {"name":"K5"},
+    {"name":"K6"}
   ],
   "yNodes":[
     {"name":"Model"},
