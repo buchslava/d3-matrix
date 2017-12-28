@@ -1,16 +1,19 @@
 {
   "xNodes":[
-    {"name":"Gates","group":1},
-    {"name":"Napoleon","group":2},
-    {"name":"Jobs","group":3},
-    {"name":"Armstrong","group":4},
-    {"name":"Kernigan","group":5}
+    {"name":"Gates"},
+    {"name":"Napoleon"},
+    {"name":"Jobs"},
+    {"name":"Armstrong"},
+    {"name":"Kernigan"}
   ],
   "yNodes":[
-    {"name":"Model","group":5},
-    {"name":"View","group":4},
-    {"name":"Controller","group":3},
-    {"name":"Utils","group":2}
+    {"name":"Model"},
+    {"name":"View"},
+    {"name":"yyyController"},
+    {"name":"Utils"},
+    {"name":"Screen 1"},
+    {"name":"Screen 2"},
+    {"name":"Screen 3"}
   ],
   "links":[
     {"source":0,"target":0,"value":2},

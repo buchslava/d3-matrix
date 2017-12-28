@@ -11,7 +11,6 @@
       height = size[1],
       nodeWidth = width / xNodes.length,
       nodeHeight = height / xNodes.length,
-      constructedMatrix = [],
       matrix = [],
       edgeHash = {},
       xScale = d3.scale.linear().domain([0,xNodes.length]).range([0,width]),
@@ -46,8 +45,8 @@
             source: sourceNode,
             target: targetNode,
             value: !currentEdge ? 0 : currentEdge.value,
-            x: xScale(b),
-            y: yScale(a),
+            x: xScale(b)+70,
+            y: yScale(a)+70,
             height: nodeHeight,
             width: nodeWidth
           };
@@ -104,7 +103,7 @@
       .call(xAxis)
       .selectAll("text")
       .style("text-anchor", "end")
-      .attr("transform", "translate(-10,-10) rotate(90)");
+      .attr("transform", "translate(60,40) rotate(90)");
 
     }
 
@@ -114,12 +113,15 @@
       .rangePoints([0,size[1]],1);
 
       yAxis = d3.svg.axis().scale(nameScale)
-      .orient("left")
-      .tickSize(4);
+      .orient("right")
+      .tickSize(0);
 
       calledG.append("g")
       .attr("class", "am-yAxis am-axis")
-      .call(yAxis);
+      .call(yAxis)
+      .selectAll("text")
+      .attr("transform", "translate(40,70)")
+      .style("text-anchor", "end");
     }
 
     return matrix;
