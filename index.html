@@ -41,11 +41,10 @@ function createAdjacencyMatrix(data) {
   .xNodes(data.xNodes)
   .yNodes(data.yNodes)
   .links(data.links)
-  .directed(true)
   .nodeID(function (d) {return d ? d.name : ''});
+
   var matrixData = adjacencyMatrix();
-  console.log(matrixData)
-  //var someColors = d3.scale.category20b();
+
   d3.select("svg")
   .append("g")
   .attr("transform", "translate(50,50)")
@@ -69,7 +68,6 @@ function createAdjacencyMatrix(data) {
     ];
     return ccc[d.value];
   })
-  //.style("fill-opacity", function (d) {return d.weight * .8});
   d3.select("#adjacencyG")
   .call(adjacencyMatrix.xAxis);
   d3.select("#adjacencyG")
